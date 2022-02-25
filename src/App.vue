@@ -1,20 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <coinListVue />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import coinListVue from "./components/coin-list.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    coinListVue,
+  },
+};
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,5 +21,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+#list-item {
+  list-style-type: none;
 }
 </style>
